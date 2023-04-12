@@ -371,10 +371,30 @@ footer{
 
 .footer-cont{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 10vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.footer-cont a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.footer-cont a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: all ease-in-out .1s;
+}
+
+.footer-cont a:hover::after{
+    width: 100%;
+    transition: all ease-in-out .1s;
 }
 
 .footer-cont span{
